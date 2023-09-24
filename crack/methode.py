@@ -59,21 +59,117 @@ def random_ua_samsung():
     return(ua)
 
 #--> User Agent Realme
-def random_ua_realme():
-    a = random.randrange(110,113)
-    b = random.randrange(1000,10000)
-    c = random.randrange(10,100)
-    os_ver = random.randrange(10,13)                                                      #--> OS Version
-    dv_typ = random.choice(['RMX3686','RMX3393','RMX3081','RMX2170','RMX2061','RMX2020']) #--> Device Type
-    bl_typ = random.choice(['QP1A','SKQ1','TP1A','RKQ1','SP1A','RP1A'])                   #--> Build Type
-    dv_ver = random.randrange(100000,250000)                                              #--> Device Version
-    sd_ver = random.randrange(1,10)                                                       #--> Update Version
-    ch_ver = f'{a}.0.{b}.{c}'                                                             #--> Chrome Version
-    ua = f'Mozilla/5.0 (Linux; Android {os_ver}; {dv_typ} Build/{bl_typ}.{dv_ver}.00{sd_ver}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{ch_ver} Mobile Safari/537.36'
+def random_ua_xiaomi():
+    a =random.randrange(3,12)
+    b = random.choice([
+    'WDY-LX1',
+    'TECNO CH6IS',
+    'Redmi Note 8 Pro',
+    'SM-A236B',
+    'itel S663L',
+    'KOZ-AL00',
+    'HMSCore 6.12.0.302',
+    'GMSCore 22.45.16',
+    'itel A661W',
+    'Xiaomi 13 Ultra',
+    'motorola edge plus 2023',
+    'SM-A217M',
+    'G501',
+    'moto g14',
+    '23049RAD8C Build/TKQ1.221114.001',
+    'FS454 Build/MRA58K',
+    'NX679J',
+    'ULTRAMINTT X6',
+    'VFD 1100 Build/MRA58K',
+    'Redmi K30i 5G',
+    'A40 Build/MRA58K',
+    'Redmi 10 5G',
+    'Redmi S2',
+    'Redmi Note 9S',
+    'Redmi X',
+    'Redmi Y1',
+    'Redmi Y1 Lite',
+    'Redmi Y2',
+    'Redmi Y3',
+    'Redmi Note 7 Pro',
+    'Redmi Note 7S',
+    'Redmi Note 8',
+    'Redmi Note 10 JE',
+    'Redmi Note 11 4G',
+    'Redmi Note 11T Pro',
+    'Redmi Note 11T Pro+',
+    'Redmi Note 11S 5G',
+    'Redmi Note 11 5G',
+    'Redmi 10',
+    'Redmi 1',
+    'Redmi Note 11',
+    'Redmi 10S',
+    'Redmi 10I',
+    'Redmi 10C',
+    'Redmi 10A',
+    'Redmi Note 1',
+    'Redmi Note 10',
+    'Redmi K50',
+    'Redmi 3X',
+    'Redmi 1S',
+    'Redmi 12C',
+    'Redmi 2A',
+    'Redmi 12',
+    'Redmi 6A',
+    'Redmi 5 Pro',
+    'Redmi 5 Plus',
+    'Redmi 5pro',
+    'Redmi 5A',
+    'Redmi 85781',
+    'Redmi 7i',
+    'Redmi 7 Pro',
+    'Redmi 7',
+    'Redmi 7A',
+    'Redmi 9A',
+    'Redmi 9T NFC',
+    'Redmi 9T',
+    'Redmi 9pro',
+    'Redmi 9C',
+    'Redmi Go',
+    'Redmi A8',
+    'Redmi A90',
+    'Redmi A2',
+    'Redmi A3'])
+    c = random.choice([
+    'zh-TW',
+    'es-es',
+    'pt-br',
+    'zh-cn',
+    'zh-CN',
+    'it-it',
+    'it-it',
+    'en-us',
+    'zh-tw',
+    'en-US',
+    'fa-ir',
+    'id-id'])
+    d = random.randrange(1111, 2999)
+    e = random.randrange(11, 19)
+    f = random.randrange(73, 99)
+    g = random.randrange(4200, 4900)
+    h = random.randrange(40, 150)
+    i = random.choice([
+    '12.22.0.3-gn',
+    '12.13.2-gn',
+    '12.16.3.1-gn',
+    '12.18.3-gn',
+    '12.10.3-gn',
+    '12.11.4.2-gn',
+    '12.15.2-gn',
+    '12.9.3-gn',
+    '12.12.1-gn',
+    '12.8.33',
+    '12.16.2-gn'])
+    ua = f'Mozilla/5.0 (Linux; Android {c} {a}; {b} Build/{d}.0.0{e}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{f}.0.{g}.{h} Mobile Safari/537.36 XiaoMi/Mint Browser/3.9.3/{i}'
     return(ua)
 
 #--> User Agent Xiaomi
-def random_ua_xiaomi():
+def random_ua_realme():
     a = random.randrange(110,113)
     b = random.randrange(1000,10000)
     c = random.randrange(10,100)
